@@ -61,4 +61,18 @@ public class MainActivity extends AppCompatActivity {
         mPenaltyTextAway.setText(mAwayPenalties.toString());
     }
 
+    public void reset(View v) {
+        // Set all scores to 0;
+        mHomeScore = 0;
+        mAwayScore = 0;
+        mHomePenalties = 0;
+        mAwayPenalties = 0;
+
+        // reinitialize all text fields
+        mScoreTextHome.setText(mHomeScore.toString());
+        mScoreTextAway.setText(mAwayScore.toString());
+        mPenaltyTextHome.setText(mAwayPenalties.toString());
+        mPenaltyTextAway.setText(mHomePenalties.toString());
+    }
+
 }
