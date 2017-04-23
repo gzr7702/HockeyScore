@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Hockey Score</string>
-    <string name="score_button_text">+Score</string>
+    <string name="score_button_text">+Points</string>
     <string name="penalty_button_text">+Penalties</string>
+    <string name="reset_button_text">Reset</string>
+    <string name="home_team_text">Home</string>
+    <string name="away_team_text">Away</string>
 </resources>
