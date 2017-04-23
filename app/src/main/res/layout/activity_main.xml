@@ -74,7 +74,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:textSize="36sp"
+                        android:textSize="44sp"
                         android:textStyle="bold"/>
 
                     <Button
@@ -82,6 +82,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@color/colorPrimary"
                         android:onClick="updateHomeScore"
                         android:text="@string/score_button_text"/>
 
@@ -99,13 +100,14 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:textSize="18sp"/>
+                        android:textSize="20sp"/>
 
                     <Button
                         android:id="@+id/team1_penalty_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@color/colorPrimary"
                         android:onClick="updateHomePenalty"
                         android:text="@string/penalty_button_text"/>
 
@@ -148,7 +150,7 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:textSize="36sp"
+                        android:textSize="44sp"
                         android:textStyle="bold"/>
 
                     <Button
@@ -156,6 +158,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@color/colorPrimary"
                         android:onClick="updateAwayScore"
                         android:text="@string/score_button_text"/>
 
@@ -173,13 +176,14 @@
                         android:layout_gravity="center_horizontal"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:textSize="18sp"/>
+                        android:textSize="20sp"/>
 
                     <Button
                         android:id="@+id/team2_penalty_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@color/colorPrimary"
                         android:onClick="updateAwayPenalty"
                         android:text="@string/penalty_button_text"/>
 
