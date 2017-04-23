@@ -41,21 +41,24 @@ public class MainActivity extends AppCompatActivity {
         mPenaltyTextAway.setText(mHomePenalties.toString());
     }
 
-    // TODO: Finish me
     public void updateHomeScore(View v) {
-        mScoreTextHome.setText("555");
+        mHomeScore++;
+        mScoreTextHome.setText(mHomeScore.toString());
     }
 
-    // TODO: implement me
     public void updateAwayScore(View v) {
+        mAwayScore++;
+        mScoreTextAway.setText(mAwayScore.toString());
     }
 
-    // TODO: implement me
     public void updateHomePenalty(View v) {
+        mHomePenalties++;
+        mPenaltyTextHome.setText(mHomePenalties.toString());
     }
 
-    // TODO: implement me
     public void updateAwayPenalty(View v) {
+        mAwayPenalties++;
+        mPenaltyTextAway.setText(mAwayPenalties.toString());
     }
 
 }
