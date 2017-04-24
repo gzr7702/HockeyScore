@@ -84,7 +84,8 @@
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
                         android:onClick="updateHomeScore"
-                        android:text="@string/score_button_text"/>
+                        android:text="@string/score_button_text"
+                        android:textColor="@android:color/background_light"/>
 
                 </LinearLayout>
 
@@ -109,7 +110,8 @@
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
                         android:onClick="updateHomePenalty"
-                        android:text="@string/penalty_button_text"/>
+                        android:text="@string/penalty_button_text"
+                        android:textColor="@android:color/background_light"/>
 
                 </LinearLayout>
 
@@ -160,7 +162,8 @@
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
                         android:onClick="updateAwayScore"
-                        android:text="@string/score_button_text"/>
+                        android:text="@string/score_button_text"
+                        android:textColor="@android:color/background_light"/>
 
                 </LinearLayout>
 
@@ -185,7 +188,8 @@
                         android:layout_weight="1"
                         android:background="@color/colorPrimary"
                         android:onClick="updateAwayPenalty"
-                        android:text="@string/penalty_button_text"/>
+                        android:text="@string/penalty_button_text"
+                        android:textColor="@android:color/background_light"/>
 
                 </LinearLayout>
 
