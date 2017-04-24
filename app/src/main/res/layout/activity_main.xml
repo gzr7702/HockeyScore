@@ -8,7 +8,7 @@
     tools:context="com.gzr7702.hockeyscore.MainActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -31,7 +31,7 @@
 
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="247dp"
+            android:layout_height="240dp"
             android:src="@drawable/hockey"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp"/>
@@ -39,84 +39,69 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="0dp">
 
             <!-- team 1 -->
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
                 android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
-                    android:paddingBottom="20dp"
+                    android:layout_weight="1"
                     android:text="@string/home_team_text"
                     android:textColor="@color/colorPrimary"
                     android:textColorLink="@color/colorPrimary"
                     android:textSize="24sp"
                     android:textStyle="bold"/>
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/team1_score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:textSize="40sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/team1_score_button"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:onClick="updateHomeScore"
+                    android:text="@string/score_button_text"
+                    android:textColor="@android:color/background_light"/>
 
-                    <TextView
-                        android:id="@+id/team1_score_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:textSize="44sp"
-                        android:textStyle="bold"/>
 
-                    <Button
-                        android:id="@+id/team1_score_button"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@color/colorPrimary"
-                        android:onClick="updateHomeScore"
-                        android:text="@string/score_button_text"
-                        android:textColor="@android:color/background_light"/>
+                <TextView
+                    android:id="@+id/team1_penalties_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textSize="18sp"/>
 
-                </LinearLayout>
-
-                <LinearLayout
+                <Button
+                    android:id="@+id/team1_penalty_button"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/team1_penalties_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:textSize="20sp"/>
-
-                    <Button
-                        android:id="@+id/team1_penalty_button"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@color/colorPrimary"
-                        android:onClick="updateHomePenalty"
-                        android:text="@string/penalty_button_text"
-                        android:textColor="@android:color/background_light"/>
-
-                </LinearLayout>
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:onClick="updateHomePenalty"
+                    android:text="@string/penalty_button_text"
+                    android:textColor="@android:color/background_light"/>
 
             </LinearLayout>
 
+            <!-- horizontal line -->
             <View
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
@@ -124,74 +109,60 @@
 
             <!-- team 2 -->
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_gravity="center_horizontal"
-                    android:paddingBottom="20dp"
+                    android:layout_weight="1"
                     android:text="@string/away_team_text"
                     android:textColor="@color/colorPrimary"
                     android:textColorLink="@color/colorPrimary"
                     android:textSize="24sp"
                     android:textStyle="bold"/>
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/team2_score_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="2"
+                    android:textSize="40sp"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:id="@+id/team2_score_button"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:onClick="updateAwayScore"
+                    android:text="@string/score_button_text"
+                    android:textColor="@android:color/background_light"/>
 
-                    <TextView
-                        android:id="@+id/team2_score_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:textSize="44sp"
-                        android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/team2_penalties_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:textSize="18sp"/>
 
-                    <Button
-                        android:id="@+id/team2_score_button"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@color/colorPrimary"
-                        android:onClick="updateAwayScore"
-                        android:text="@string/score_button_text"
-                        android:textColor="@android:color/background_light"/>
-
-                </LinearLayout>
-
-                <LinearLayout
+                <Button
+                    android:id="@+id/team2_penalty_button"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimary"
+                    android:elevation="0dp"
+                    android:onClick="updateAwayPenalty"
+                    android:text="@string/penalty_button_text"
+                    android:textColor="@android:color/background_light"/>
 
-                    <TextView
-                        android:id="@+id/team2_penalties_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:textSize="20sp"/>
-
-                    <Button
-                        android:id="@+id/team2_penalty_button"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@color/colorPrimary"
-                        android:onClick="updateAwayPenalty"
-                        android:text="@string/penalty_button_text"
-                        android:textColor="@android:color/background_light"/>
-
-                </LinearLayout>
 
             </LinearLayout>
         </LinearLayout>
